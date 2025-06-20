@@ -1,5 +1,5 @@
 if (localStorage.getItem('loggedIn') === 'true') {
-  window.location.href = 'home.html';
+  window.location.href = '/SmartLoginSystem/home.html';
 }
 
 const emailInput = document.querySelector(`#signinEmail`);
@@ -32,7 +32,7 @@ function login() {
     successMessage.parentElement.classList.remove('d-none');
     setTimeout(function () {
       successMessage.parentElement.classList.add('d-none');
-      window.location.href = 'home.html';
+      window.location.href = '/SmartLoginSystem/home.html';
     }, 3000);
   } else {
     emailInput.classList.add('is-invalid');

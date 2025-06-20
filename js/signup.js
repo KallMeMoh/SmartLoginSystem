@@ -1,5 +1,5 @@
 if (localStorage.getItem('loggedIn') === 'true') {
-  window.location.href = 'home.html';
+  window.location.href = '/SmartLoginSystem/home.html';
 }
 
 const usernameInput = document.querySelector(`#signupName`);
@@ -77,7 +77,7 @@ function signup(e) {
     successMessage.parentElement.classList.remove('d-none');
     setTimeout(function () {
       successMessage.parentElement.classList.add('d-none');
-      window.location.href = 'index.html';
+      window.location.href = '/SmartLoginSystem/index.html';
     }, 3000);
   }
 }
